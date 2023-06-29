@@ -77,15 +77,21 @@ header .list-item {
 .button-list {
   display: flex;
   gap: 24px;
-  margin-top: 96px;
   margin-bottom: 72px;
+  justify-content: center;
 }
 
 .projects-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  column-gap: 24px;
+  row-gap: 48px;
   margin-bottom: 120px;
+}
+
+.portfolio {
+  padding-top: 96px;
+  padding-bottom: 120px;
 }
 
 .portfolio .container {
@@ -118,12 +124,14 @@ header .list-item {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .portfolio .button:hover,
 .portfolio .button:focus {
   color: #ffffff;
   background-color: var(--link-hover-color);
+  border: 1px solid transparent;
 }
 
 .portfolio-item-text {
@@ -289,6 +297,7 @@ header .list-item {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .member-role {
@@ -330,7 +339,6 @@ header .list-item {
 .member-text {
   display: flex;
   flex-direction: column;
-  gap: 8px;
 }
 
 .footer {
