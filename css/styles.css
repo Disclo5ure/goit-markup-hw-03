@@ -34,6 +34,10 @@ ul {
   list-style: none;
 }
 
+img {
+  display: block;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -127,10 +131,6 @@ header .container {
   border-top: 0;
 }
 
-.projects-list img {
-  display: block;
-}
-
 .logo {
   color: var(--main-blue-color);
   font-family: 'Raleway', sans-serif;
@@ -148,6 +148,8 @@ header .container {
 
 .site-nav {
   width: 261px;
+  display: flex;
+  align-items: center;
 }
 
 .site-nav .list {
@@ -165,7 +167,7 @@ header .container {
 
 .button {
   display: flex;
-  border-width: 0;
+  border: none;
 }
 
 .site-nav .list .link:hover,
@@ -194,6 +196,7 @@ header .container {
 
 .hero {
   background-color: var(--main-header-color);
+  padding: 188px 0;
 }
 
 .hero-container {
@@ -212,7 +215,7 @@ header .container {
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
-  width: 496px;
+  max-width: 496px;
 }
 
 .hero .button {
@@ -228,6 +231,8 @@ header .container {
   margin: 0 auto;
   padding: 16px 32px;
   border-radius: 4px;
+  display: block;
+  min-width: 169px;
 }
 
 .hero .button:hover,
@@ -235,11 +240,16 @@ header .container {
   background-color: var(--link-hover-color);
 }
 
+.traits {
+  padding: 120px 0;
+}
+
 .traits .header {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .traits .container,
@@ -250,7 +260,7 @@ header .container {
 
 .traits .list {
   display: flex;
-  justify-content: space-between;
+  gap: 24px;
 }
 
 .traits .list-item {
@@ -267,12 +277,13 @@ header .container {
   margin-bottom: 72px;
 }
 
-.projects .container {
+.projects {
   padding-bottom: 120px;
 }
 
-.projects li {
+.projects-item {
   height: 300px;
+  flex-basis: calc(100% - 48px) / 3;
 }
 
 .member-name {
@@ -289,6 +300,7 @@ header .container {
 
 .team {
   background-color: var(--cloud);
+  padding: 120px 0;
 }
 
 .team .header {
